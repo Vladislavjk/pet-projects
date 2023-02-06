@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.App {
+    width: 800px;
+}
+
+.post {
+    display: flex;
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post__btns {
+    display: flex;
+}
+
+.post-enter {
+    transform: translateX(-350px);
+}
+.post-enter-active {
+    transform: translateX(0px);
+    transition: all 500ms ease-in;
+}
+.post-exit {
+    opacity: 1;
+}
+.post-exit-active {
+    transform: translateX(-350px);
+    transition: all 500ms ease-in;
+}
+
+.page__wrapper {
+    margin-top: 30px;
+    display: flex;
+}
+
+.page {
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+
+.page__current {
+    border: 2px solid orange;
+    font-weight: bold;
+}
+
+.navbar {
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background: lightgray;
+}
+
+.navbar__links {
+    margin-left: auto;
+}
+
+.header_style {
+    font-size: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.login_form_username {
+    padding-block-start: 30px;
+    font-size: 20px;
+}
+
+.login_form_password {
+    padding-block-start: 30px;
+    padding-block-end: 30px;
+    font-size: 20px;
+}
+
+.search_form {
+    padding-block-start: 50px;
+    padding-block-end: 30px;
+    font-size: 36px;
+}
+
+.sign_up_help {
+    padding-block-start: 30px;
+    padding-block-end: 10px;
+}
+
+.price {
+    color: red;
+    font-size: 30px;
+}
+
+.img_header {
+    margin-right: 60px;
+}
+
+.brand_name {
+    font-size: 30px;
+}
+
+.product_item {
+    font-size: 25px;
+}
+
+.padding_description {
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.card_header_style {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
