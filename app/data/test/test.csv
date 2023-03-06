@@ -1,0 +1,7 @@
+title,city,marker_icon,workplace_type,company_name,experience_level,skills,contract_type
+Data Scientist,Warszawa,data,remote,Appliscale,junior,Python SQL,permanent
+Data Scientist,,data,remote,,mid,Python SQL Azure,b2b
+Data Scientist,,data,remote,,senior,,b2b
+Java Developer,Wrocław,java,remote,,mid,Java SQL,permanent
+Python Developer,Kraków,python,remote,,mid,Python SQL Django,permanent
+Python Developer,Kraków,python,remote,,mid,Python SQL Django,b2b
