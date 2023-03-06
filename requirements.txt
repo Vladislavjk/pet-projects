@@ -19,3 +19,4 @@ Werkzeug
 psycopg2-binary
 flask-sqlalchemy
 requests
+python-dotenv
