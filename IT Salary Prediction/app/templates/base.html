@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}- FlaskApp</title>
+    <style>
+        nav a {
+            color: #d64161;
+            font-size: 3em;
+            margin-left: 50px;
+            text-decoration: none;
+        }
+
+        .book {
+            padding: 20px;
+            margin: 10px;
+            background-color: #f7f4f4;
+        }
+
+        .review {
+                margin-left: 50px;
+                font-size: 20px;
+        }
+
+	form {
+        	display: flex;
+        	flex-direction: column;
+        	width: 50%;
+        	margin: auto;
+        	padding: 20px;
+        	background-color: #000;
+        	color: #fff;
+        	border-radius: 10px;
+    	}
+
+    	input[type="text"], input[type="submit"] {
+        	border: none;
+        	border-radius: 5px;
+        	padding: 10px;
+        	margin-bottom: 20px;
+    	}
+
+    	input[type="submit"] {
+        	background-color: #f00;
+       		color: #fff;
+        	font-weight: bold;
+        	cursor: pointer;
+    	}
+
+    	input[type="submit"]:hover {
+        	background-color: #c00;
+    	}
+
+	.centered {
+            margin: auto;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="{{ request.path }}" method="post">
+    <label>Title:</label>
+    <input type="text" name="title">
+    
+    <label>City:</label>
+    <input type="text" name="city">
+    
+    <label>Marker icon:</label>
+    <input type="text" name="marker_icon">
+    
+    <label>Workplace type:</label>
+    <input type="text" name="workplace_type">
+    
+    <label>Company name:</label>
+    <input type="text" name="company_name">
+    
+    <label>Experience level:</label>
+    <input type="text" name="experience_level">
+    
+    <label>Skills:</label>
+    <input type="text" name="skills">
+    
+    <label>Contract type:</label>
+    <input type="text" name="contract_type">
+    
+    <input type="submit" value="Submit">
+    </form>
+
+    <div class="content">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+</html>
